@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+</body>
+<script>
+    let arr = [8, 1, 20, 5, 27, 19, 97, 29, 6, 12];
+    let string = "";
+
+    function check_array(array) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] >= 10) {
+                string += array[i] + " "
+                count++;
+            }
+        }
+        return count;
+    }
+
+    let result = check_array(arr);
+    alert("Số lượng phần tử lớn hơn hoặc bằng 10 là: " + result);
+    alert("Phần tử lớn hơn hoặc bằng 10 là: " + string);
+</script>
+</html>
